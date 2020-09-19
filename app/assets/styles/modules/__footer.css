@@ -1,0 +1,131 @@
+
+.container-one{
+    display: flex;
+    height: 200px;
+    background-color: black;
+}
+
+.container-one .extra {
+    flex: 1;
+}
+
+.container-one .son-one {
+    flex: 2;
+    display: flex;
+    margin: auto;
+}
+
+.container-one .son-of-son-one {
+    margin: auto;
+}
+
+.container-one .son-one .logofooter {
+    height: 150px;
+    width: auto;
+    margin: auto;
+}
+
+.container-one .son-two {
+    flex: 1;
+    color: blanchedalmond;
+    display: flex;
+}
+
+.container-one .son-two .son-of-son-two{
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-right: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.lista{
+    list-style-type: none;
+    
+    text-align: center;
+}
+
+.lista .hola {
+    color: white;
+    cursor: pointer;
+}
+
+.container-two{
+    background-color: black;
+    height: 20px;
+    color: white;
+    display: flex;
+}
+
+.container-two .son-one{
+    margin: auto;
+    flex: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0%;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container-three {
+    display: flex;
+    background-color: black;
+    color: rgb(209, 209, 209);
+    height: 50px;
+    font-size: small;
+    
+}
+
+.container-three .son-one{
+    flex: 1;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-three .son-two{
+    flex: 1;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-four{
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .container-one{
+        display: none;
+    }
+
+    .container-four{
+        display: flex;
+        background-color: black;
+    }
+    
+    .container-four .son-two{
+        display: flex;
+        flex: 1;
+        margin: auto;
+    }
+
+    .container-four .son-two .son-of-son-two{
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            margin: auto;
+    }
+
+    .container-two{
+        display: none;
+    }
+    .container-three{
+        display: none;
+    }
+}
+

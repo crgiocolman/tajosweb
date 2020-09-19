@@ -1,0 +1,9 @@
+header{
+    background-color: black;
+    .logo{
+        width: auto;
+          height: 40px;
+          margin-top: auto;
+        margin-bottom: auto;
+      }
+}
