@@ -2,7 +2,7 @@
 .container-one{
     display: flex;
     height: 200px;
-    background-color: black;
+    background-color: $mainBlue;
 }
 
 .container-one .extra {
