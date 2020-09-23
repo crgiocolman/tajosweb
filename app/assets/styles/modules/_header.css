@@ -1,9 +1,14 @@
-header{
+.header{
     background-color: black;
     .logo{
         width: auto;
           height: 40px;
           margin-top: auto;
         margin-bottom: auto;
+      }
+    
+      &--ul{
+        margin-bottom: 0;
+        text-decoration: none;
       }
 }

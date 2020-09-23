@@ -1,37 +1,38 @@
 
-.container-one{
+.footer{
     display: flex;
     height: 200px;
-    background-color: $mainBlue;
+    background-color: #000000;
+
+    &--extra{
+        flex: 1;
+    }
+
+    &--son-one{
+        flex: 2;
+        display: flex;
+        margin: auto;
+    }
+
+    &--son-of-son-one{
+        margin: auto;
+    }
+
+    &--logofooter{
+        height: 150px;
+        width: auto;
+        margin: auto;
+    }
 }
 
-.container-one .extra {
-    flex: 1;
-}
 
-.container-one .son-one {
-    flex: 2;
-    display: flex;
-    margin: auto;
-}
-
-.container-one .son-of-son-one {
-    margin: auto;
-}
-
-.container-one .son-one .logofooter {
-    height: 150px;
-    width: auto;
-    margin: auto;
-}
-
-.container-one .son-two {
+.footer .son-two {
     flex: 1;
     color: blanchedalmond;
     display: flex;
 }
 
-.container-one .son-two .son-of-son-two{
+.footer .son-two .son-of-son-two{
     margin: auto;
     margin-left: 0px;
     margin-top: 30px;
@@ -99,7 +100,7 @@
 }
 
 @media screen and (max-width: 960px) {
-    .container-one{
+    .footer{
         display: none;
     }
 
