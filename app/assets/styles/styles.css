@@ -7,5 +7,6 @@
 @import 'modules/_footer';
 @import 'modules/_banner';
 @import 'modules/_servicios';
-@import 'modules/_wraper.css';
+@import 'modules/_wraper';
+@import 'modules/_griditem';
 

@@ -13,45 +13,24 @@
 
 .bienvenidos{
     grid-area: bienvenidos;
-    background-color: blue;
+    
 }
 
 .servicio1{
     grid-area: servicio1;
-    background-color: red;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &--texto{
-        color: greenyellow;
-        position: absolute;
-    }
-    &--imagen{
-        display: block;
-        height: 800px;
-        width: 800px;
-        object-fit: cover;
-    }
 }
 
-#servicio2{
+.servicio2{
     grid-area: servicio2;
-    background-color: yellow;
-    position:relative;
-	cursor:pointer;
+    
 }
 
-#servicio3{
+.servicio3{
     grid-area: servicio3;
-    background-color: purple;
-    position:relative;
-	cursor:pointer;
+    
 }
 
-#servicio4{
+.servicio4{
     grid-area: servicio4;
-    background-color: green;
-    position:relative;
-	cursor:pointer;
+    
 }
