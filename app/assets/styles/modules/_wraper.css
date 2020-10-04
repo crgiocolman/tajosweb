@@ -13,4 +13,10 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    &--larger{
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
 }
