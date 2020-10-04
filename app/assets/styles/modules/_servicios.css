@@ -1,3 +1,11 @@
+#serviciosNormal{
+    display: none;
+}
+
+#serviciosMovil{
+    display: none;
+}
+
 .efecto{
     position:absolute;
 	bottom:-16px;
@@ -113,3 +121,4 @@
 	background-color: #000000;
 	color: #DFDAD4;
 }
+
