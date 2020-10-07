@@ -27,7 +27,7 @@
 }
 
 .carousel__lista {
-    
+    text-align: center;
 }
 
 .carousel__indicadores .glider-dot{
@@ -37,4 +37,21 @@
     background: black;
     opacity: .2;
     border-radius: 0;
+}
+
+.carousel__lista .glider-slide img{
+    object-fit: cover;
+    width: 50vh;
+    height: 50vh;
+    margin-bottom: -5px;
+}
+
+.carousel__lista .glider-slide p{
+    margin: 0;
+    height: 30px;
+    padding-top: 10px;
+    font-weight: 250;
+    background: black;
+    color: white;
+    text-transform: uppercase;
 }

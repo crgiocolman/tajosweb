@@ -47,8 +47,12 @@ class ServicioMovil{
 
     Slider(){
     new Glider(document.querySelector('.carousel__lista'), {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        rewind: true,
+        draggable: true,
+        dragVelocity: 3,
         dots: '.carousel__indicadores',
         arrows: {
         prev: '.carousel__anterior',
