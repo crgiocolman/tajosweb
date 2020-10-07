@@ -1,5 +1,10 @@
 import '../styles/styles.css'
 import Footer from './modules/_footer'
+import Header from './modules/_header'
+
+
+
+let header = new Header();
 
 let efectoservicio;
 let serviciomovil;
@@ -16,6 +21,8 @@ if (w >= 800) {
 }
 
 let footer = new Footer();
+
+
 
 if (module.hot) {
     module.hot.accept()

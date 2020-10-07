@@ -2,9 +2,9 @@
     display: none;
 }
 
-#serviciosMovil{
+/*#serviciosMovil{
     display: none;
-}
+}*/
 
 .efecto{
     position:absolute;
@@ -109,16 +109,5 @@
     text-transform: uppercase;
 }
 
-.serviciosMovil li{
-	overflow: hidden;
-}
 
-.serviciosMovil img{
-	width:200% !important;
-}
-
-.serviciosMovil h6{
-	background-color: #000000;
-	color: #DFDAD4;
-}
 
