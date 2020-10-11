@@ -9,4 +9,5 @@
 @import 'modules/_servicios';
 @import 'modules/_wraper';
 @import 'modules/glider.min.css';
-@import 'modules/_servicios-movil.css';
+@import 'modules/_servicios-movil';
+@import 'modules/_navbar';
