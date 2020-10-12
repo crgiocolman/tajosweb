@@ -1,7 +1,6 @@
-class Header {
+class HeaderMovil {
     constructor(){
-        this.InsertarHtml();
-        
+        this.InsertarHtml()
     }
 
     insertarHTML() {
@@ -21,11 +20,7 @@ class Header {
                     Inicio
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-links">
-                    Sobre Tajos
-                    </a>
-                </li>
+                
                 <li class="nav-item">
                     <a href="#sucursales" class="nav-links">
                     Sucursales
@@ -58,4 +53,4 @@ class Header {
 
 }
 
-export default Header;
+export default HeaderMovil;
