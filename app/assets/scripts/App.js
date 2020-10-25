@@ -4,8 +4,6 @@ import Footer from './modules/_footer'
 
 let efectoservicio;
 let serviciomovil;
-let header;
-let headermovil;
 
 var w = window.innerWidth
 
@@ -20,16 +18,6 @@ if (w >= 800) {
     }).catch(() => console.log("No se cargo el modulo ServiciosMovil."))
 }
 
-/* Header */
-if (w >= 800) {
-    import('./modules/_header').then(x => {
-        header = new x.default()
-    }).catch(() => console.log("No se cargo el modulo Header.")) 
-}else{
-    import('./modules/_header_movil').then(x => {
-        headermovil = new x.default()
-    }).catch(() => console.log("No se cargo el modulo HeaderMovil."))
-}
 
 let footer = new Footer();
 
