@@ -1,4 +1,5 @@
 import '../styles/styles.css'
+import Header from './modules/_header'
 import Footer from './modules/_footer'
 
 
@@ -18,7 +19,7 @@ if (w >= 800) {
     }).catch(() => console.log("No se cargo el modulo ServiciosMovil."))
 }
 
-
+let header = new Header();
 let footer = new Footer();
 
 

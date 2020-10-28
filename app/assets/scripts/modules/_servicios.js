@@ -65,6 +65,7 @@ class EfectoServicio {
     }
 
     IncluirEfecto(el) {
+        console.log(el)
         el.querySelector("figure").classList.remove("myitem")
         el.querySelector("figure").classList.add("efecto")
         var c = el.querySelector("figure").childNodes[2].parentNode.innerText;

@@ -13,52 +13,40 @@
 
 <body>
   <header class="header" id="header">
-    <nav class="navbar">
-      <a href="/" class="navbar-logo">
-          <img src="assets/images/tajoslogo.png" class="logo">
-      </a>
-
-      <div class="menu-icon">
-          <i class="fas fa-times"></i>
-      </div>
-
-      <ul class="nav-menu">
-          <li class="nav-item">
-              <a href="/" class="nav-links">
-              Inicio
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#about" class="nav-links">
-              Sobre Tajos
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#sucursales" class="nav-links">
-              Sucursales
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#servicios" class="nav-links">
-              Servicios
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#tienda" class="nav-links">
-              Tienda
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#contacto" class="nav-links">
-              Contáctenos
-              </a>
-          </li>
-      </ul>
-      <a href="/">
+    <nav>
+      <ul class="menu">
+        <li class="logoo"><a href="#"><img src="assets/images/tajoslogo.png" class="logo"></a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item has-submenu">
+          <a tabindex="0" >Services <i id="flecha" class="fas fa-angle-down"></i></a>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">Design</a></li>
+            <li class="subitem"><a href="#">Development</a></li>
+            <li class="subitem"><a href="#">SEO</a></li>
+            <li class="subitem"><a href="#">Copywriting</a></li>
+          </ul>
+        </li>
+        <li class="item has-submenu">
+          <a tabindex="0">Plans <i id="flecha" class="fas fa-angle-down"></i></a>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">Freelancer</a></li>
+            <li class="subitem"><a href="#">Startup</a></li>
+            <li class="subitem"><a href="#">Enterprise</a></li>
+          </ul>
+        </li>
+        <li class="item"><a href="#">Blog</a></li>
+        <li class="item"><a href="#">Contact</a>
+        </li>
+        <li class="toggle" id="toggle"><a href="#"><i class="fas fa-bars" id="barra_x"></i></a></li>
+        <a href="/" class="idioma">
           <button class="btnEs" id="esp">Es</button>
           <button class="btnEn" id="eng">En</button>
-      </a>
-  </nav> 
+        </a>
+      </ul>
+      
+    </nav>
+  
   </header>
 
   <div class="banner">
@@ -72,7 +60,7 @@
   <div class="wraper wraper--larger" id="serviciosNormal"></div>
 
   <div class="wraper serviciosMovil" id="serviciosMovil">
-      
+
   </div>
 
   <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
