@@ -39,6 +39,8 @@ class Header {
     events(){
         this.toggle.addEventListener("click", () => this.toggleMenu())
         this.sub.forEach(el => el.addEventListener("click", () => this.toggleSubMenu(el)))
+        this.sub.forEach(el => el.addEventListener("mouseover", () => this.toggleSubMenu(el)))
+        this.sub.forEach(el => el.addEventListener("mouseout", () => this.toggleSubMenu(el)))
     }
 
     closemenu(){
