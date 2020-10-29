@@ -2,6 +2,11 @@ a:focus {
   outline: none;
 }
 
+li {
+  outline: none;
+  cursor: pointer;
+ }
+
 .logo{
   width: auto;
     height: 40px;
@@ -119,7 +124,7 @@ a {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .btnEn {
@@ -131,26 +136,15 @@ a {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: transparent;
 }
 
-.btnEs:hover {
-  transition: all 0.3s ease-out;
-  background-color: transparent;
+.btnActive{
+  background-color: blue;
   color: #fff;
-  border-radius: 4px;
-  border: 2px solid var(--primary);
   transition: all 0.3s ease-out;
 }
 
-.btnEn:hover {
-  transition: all 0.3s ease-out;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 4px;
-  border: 2px solid var(--primary);
-  transition: all 0.3s ease-out;
-}
 
 @mixin atMedium {
 
@@ -162,6 +156,7 @@ a {
 
 .idioma{
   opacity: 1;
+  cursor: default;
 }
   .menu {
     align-items: flex-start;     
@@ -190,6 +185,7 @@ a {
 }
 
 .submenu-active  {
+    transition: all .3s ease-out;
     border-top-style: solid;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
