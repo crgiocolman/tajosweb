@@ -7,7 +7,7 @@ class Header {
         this.sub = document.querySelectorAll(".has-submenu");
         this.esp = document.querySelector(".btnEs");
         this.eng = document.querySelector(".btnEn");
-        
+        this.item = document.querySelectorAll(".item");
         this.events();
     }
 
@@ -35,24 +35,44 @@ class Header {
             el.querySelector(".submenu").classList.toggle("submenu-active")
             el.querySelector(".fa-angle-down").classList.toggle("fa-angle-up")
             var a = el.querySelectorAll(".subitem")
-            a.forEach(e => e.addEventListener("click", () => this.closemenu()))   
+
+            el.querySelectorAll(".subitem").forEach(e => e.addEventListener("click", () => this.closesubmenu()))   
         }
     }
 
 
     events(){
-        this.toggle.addEventListener("click", () => this.toggleMenu())
-        this.sub.forEach(el => el.addEventListener("click", () => this.toggleSubMenu(el)))
+        
         if (window.innerWidth > 800 ) {
             this.sub.forEach(el => el.addEventListener("mouseover", () => this.toggleSubMenu(el)))
-            this.sub.forEach(el => el.addEventListener("mouseout", () => this.toggleSubMenu(el)))   
+            this.sub.forEach(el => el.addEventListener("mouseout", () => this.toggleSubMenu(el)))
+            this.esp.addEventListener("click", () => this.pintaridiomaesp())
+            this.eng.addEventListener("click", () => this.pintaridiomaeng())   
+        }else {
+            this.toggle.addEventListener("click", () => this.toggleMenu())
+            this.sub.forEach(el => el.addEventListener("click", () => this.toggleSubMenu(el)))
+            this.esp.addEventListener("click", () => this.pintaridiomaesp())
+            this.eng.addEventListener("click", () => this.pintaridiomaeng())
+            this.item.forEach(e => e.addEventListener("click", () => this.closemenu(e)))  
         }
-        this.esp.addEventListener("click", () => this.pintaridiomaesp())
-        this.eng.addEventListener("click", () => this.pintaridiomaeng())
-        console.log(this.sub)
+        
+        
+        
     }
 
-    closemenu(){
+    closemenu(e){
+        if (e.classList.contains("has-submenu")) {
+            console.log(e)
+        }else {
+            this.menu.classList.remove("active");
+            this.barra.classList.remove("fa-times");
+            this.barra.classList.add("fa-bars");
+            this.idioma.classList.remove("idioma-visible")
+            this.idioma.classList.add("idioma");
+        }
+    }
+
+    closesubmenu(){
         this.menu.classList.remove("active");
         this.barra.classList.remove("fa-times");
         this.barra.classList.add("fa-bars");

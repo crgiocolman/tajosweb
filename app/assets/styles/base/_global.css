@@ -7,3 +7,18 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.about,
+.tienda,
+.contacto{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 50vh;
+}
+
+.about h1,
+.tienda h1,
+.contacto h1{
+    margin: auto;
+}
